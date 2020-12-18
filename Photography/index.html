@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotosGalaxy</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resources\css\index.css">
+	<script type="text/javascript" src="../photography/resources/javascript/index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#name_taker_submit").click(function(){
+				$("#name_taker").hide();
+			});
+			$("#groot_info_ext").hide();
+			$("#Groot_info").mouseenter(function(){
+				$("#main2").css("height","325px");
+				$("#groot_info_ext").show("slow");
+			});
+			$("#Groot_info").mouseleave(function(){
+				$("#main2").css("height","230px");
+				$("#groot_info_ext").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="name_taker">
+		<span style="font-size: 20px;color: white;">Welcome to the "Photos'Galaxy"...
+		How should we address you?</span>
+		<input type="text" placeholder="please enter your name" id="name_taker_container">
+		<button id="name_taker_submit" onclick="show_user()">Submit</button>
+	</div>
+	<div id="wholecontent">
+		<div class="header">
+			<div id="logo"><a href="index.html" target="self">Photos'<font color="white">Galaxy</font></a></div>
+			<div id="menubar">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<div id="access"><a href="loginpage.html">Login/Sign Up</a></div>
+		</div>
+		<hr>
+		<div id="maincontent">
+			<div id="main1">
+				<a href="wild.html">
+					<img src="resources/images/wildlife/im3.jpg"
+					width="1080px" height="340px">
+					<div>click the image for the amazing photos from wildlife</div>
+				</a>
+			</div>
+			<div id="main2">
+				<h1>The "Groot"</h1>
+				<p id="Groot_info">
+					This article is about Mr.Groot. Who is famous for his contribution into the wild-life photography from last 20 years. This website is just a reflection of his imagination. During the initial days of his life he was not able to manage himself in a world, where almost everything is depending upon the money and the game of luck. That's Why he want to create an environment, where he can share his life experiences and techniques, cause everyone is not able to pay for a institute or for a highly qualified professor.
+					<span id="groot_info_ext">
+					The content on this website is taken from the experience of Mr. Groot and other professor. Initally he want to join the armed forces , he tried hard but his efforts wasn't enough to join the armed forces. Then  he decided to make his career in the field of education and worked almost four years as a teacher of mathematics in a private school.At that point of time he had enough money to live his life peacefully,but he didn't know why he is not getting the satisfaction.So after that he just join the world of photography.</span>
+				</p>
+			</div>
+			<div id="main3">
+				<h1>Join us for the upcoming tours of Indian Sanctuaries and National Parks</h1>
+				<span>
+					<a href="join.html">Silent Valley National Park,Kerala</a><br> (From march 12th,2021 - April 2nd,2021)<br>
+					<a href="join.html">Kaziranga National Park, Assam</a><br>(From july 9th,2021 - August 6th,2021)<br>
+					<a href="join.html">Rajaji National Park, Uttarakhand</a><br>(From September 10th,2021 - october 1st,2021)<br>
+				</span>
+			</div>
+			<div id="main4">
+				<a href="street.html"><img src="resources/images/streetlife/im3.jpg" height="350px" width="400px">
+				<div>Try to take a look into the the street and world life photos like above image</div></a>
+			</div>
+			<div id="main5">
+				<h2>Hire our trained Photographer/Cameraman for different purposes</h2>
+				<div>
+					<label style="font-size: 25px;">Select Your purpose</label>
+					<select style="width: 200px; height: 30px;">
+						<option value="special occassions">special occassions</option>
+						<option value="Trip">Trip</option>
+						<option value="vacations">For vacations</option>
+						<option value="Documentry">Documentry</option>
+						<option value="Video Shoot">Video Shoot</option>
+						<option value="Reporting Field" selected="selected">Reporting Field</option>
+					</select><br>
+					<p>Click on
+					<a href="hiring.html"><button type="Submit" style="height: 30px;width: 90px;">Submit</button></a> button to complete the process of hiring.</p>
+					<b>OR</b><br>
+					<span>Check Whole the Hiring procedure<a href="hiring.html"> Here... </a></span>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<hr>
+			<div class="footer_exp" id="footer_feedback">
+				<h2><font color="white">Your feedback is important for us.</font></h2>
+				<form action="mailto:demo@gmail.com"  style="color: white;font-size: 20px;">
+					Name:<br>
+					<input type="text" id="feedback_user"><br>
+					Message:<br>
+					<textarea rows="4" cols="20">
+					</textarea><br>
+					<button onclick="feedback_validation()">submit</button>
+				</form>
+			</div>
+			<div id="footer_menu" class="footer_exp">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<div id="follow_platform" class="footer_exp">
+				<ul>
+					<li style="color: white;"><h2>You can follow us</h2></li>
+					<li id="facebook_logo"><a href="https://www.facebook.com/">facebook</a></li>
+					<li id="instagram_logo"><a href="https://www.instagram.com/">instagram</a></li>
+					<li id="pinterest_logo"><a href="https://www.pinterest.com/">pinterest</a></li>
+					<li id="youtube_logo"><a href="https://www.youtube.com/">Youtube</a></li>
+				</ul>
+			</div>
+			<div id="newsletter" class="footer_exp">
+				<p>After the complition of every tour we provide special documentries and newsletters to our subscribers. So if you want, please subscribe to our newsletters  </p>
+				<input type="text" id="newsletter_email" placeholder="enter your email">
+				<button onclick="newsletter_user()">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

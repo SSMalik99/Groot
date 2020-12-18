@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotosGalaxy</title>
+	<link rel="stylesheet" type="text/css" href="resources\css\index.css">
+	<script type="text/javascript" src="../photography/resources/javascript/index.js"></script>
+</head>
+<body>
+	
+	<div style="background-color: black; border-radius: 20px;">
+		<div class="header">
+			<div id="logo"><a href="index.html" target="self">Photos'<font color="white">Galaxy</font></a></div>
+			<div id="menubar">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul></div>
+			<div id="access"><a href="loginpage.html">Login/Sign Up</a></div>
+		</div><hr>
+		<div class="alien_maincontent">
+			<div id="categories_content">
+				<div class="alien_menu" id="categories_menu">
+					<ul>
+						<li><a href="star.html">Celebrities</a></li>
+						<li><a href="wild.html">Wildlife</a></li>
+						<li><a href="street.html">StreetLife</a></li>
+						<li><a href="nature.html">Nature</a></li>
+					</ul><hr>
+				</div>
+				<div id="categories_intro">
+					<p>
+						<b>This webpage is created just to refresh your mood with the
+						amazing photos from the world we lived in and to show how 
+						vast the  earth's beauty exists.
+						Basically it is divided  into four part.</b>
+					</p>
+				</div>
+				<div class="categories_part">
+					<a href="star.html">
+						<img src="resources/images/artist/emmawatson1.jpg" width="500" height="400">
+					</a>
+					<div class="description">Take a look on your favourite celebrities' pictures taken from their live shows or after press conference</div>
+				</div>
+				<div class="categories_part">
+					<a href="wild.html">
+						<img src="resources/images/wildlife/im50.jpg"  width="500" height="400">
+					</a>
+					<div class="description">Above image will take you to the images, which were taken from the different sanctuaries</div>
+				</div>
+				<div class="categories_part">
+					<a href="street.html">
+						<img src="resources/images/streetLife/im7.jpg" width="500" height="400">
+					</a>
+					<div class="description">street art and street life views during our different tours across the world</div>
+				</div>
+				<div class="categories_part">
+					<a href="nature.html">
+						<img src="resources/images/nature/im1.jpg" width="500" height="400">
+					</a>
+					<div class="description">Photos from the special views of our charming planet "The Earth" by our members</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="background-color: black;border-radius: 20px;">
+			<hr>
+			<div class="footer_exp" id="footer_feedback">
+				<h2><font color="white">Your feedback is important for us.</font></h2>
+				<form action="mailto:demo@gmail.com"  style="color: white;font-size: 20px;">
+					Name:<br>
+					<input type="text" id="feedback_user"><br>
+					Message:<br>
+					<textarea rows="4" cols="20">
+					</textarea><br>
+					<button onclick="feedback_validation()">submit</button>
+				</form>
+			</div>
+			<div id="footer_menu" class="footer_exp">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<div id="follow_platform" class="footer_exp">
+				<ul>
+					<li style="color: white;"><h2>You can follow us</h2></li>
+					<li id="facebook_logo"><a href="https://www.facebook.com/">facebook</a></li>
+					<li id="instagram_logo"><a href="https://www.instagram.com/">instagram</a></li>
+					<li id="pinterest_logo"><a href="https://www.pinterest.com/">pinterest</a></li>
+					<li id="youtube_logo"><a href="https://www.youtube.com/">Youtube</a></li>
+				</ul>
+			</div>
+			<div id="newsletter" class="footer_exp">
+				<p>After the complition of every tour we provide special documentries and newsletters to our subscribers. So if you want, please subscribe to our newsletters  </p>
+				<input type="text" placeholder="enter your email" id="newsletter_email">
+				<button onclick="newsletter_user()">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

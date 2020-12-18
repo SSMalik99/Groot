@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotosGalaxy</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resources\css\index.css">
+	<script type="text/javascript" src="resources\javascript\index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#passport_id").hide();
+			$("#passport_yes").click(function(){
+				$("#passport_id").show("slow");	
+			});
+			$("#passport_no").click(function(){
+				$("#passport_id").hide("slow");	
+			});
+		});
+	</script>
+	<style type="text/css">
+		#student_header{
+			background-color: tomato;
+			border-radius: 5px;
+		}
+		#student_footer{
+			background-color: black;
+			border-radius: 20px;
+		}
+		#student_form{
+			font-size: 20px;
+			background-color: #1A534B;
+			color: white;
+			border-radius: 20px;
+			height: auto;
+			width: 500px;
+			margin: auto;
+			padding: 30px;
+		}
+		.option_selector{
+			height: 30px;
+			width: 150px;
+		}
+		input[type="text"]{
+			height: 30px;
+			width: 250px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wholecontant">
+		<div class="header" id="student_header">
+			<div id="logo"><a href="index.html" target="self">Photos'<font color="white">Galaxy</font></a></div>
+			<div id="menubar">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul></div>
+			<div id="access"><a href="loginpage.html">Login/Sign Up</a></div>
+		</div><hr>
+		<div>
+			<form id="student_form">
+				<label>Enter your name:</label><br>
+				<input type="text" placeholder="enter your name" required="required" id="register_form_user"><br><br>
+				<label>Email Id:</label><br>
+				<input type="text" placeholder="enter your email id" required="required" id="register_form_email"><br><br>
+				<label>Date of Birth:</label><input type="Date"><br><br>
+				<label>Gender:</label>
+				<select class="option_selector" required="required">
+					<option selected="selected">select your gender</option>
+					<option>Male</option>
+					<option>Female</option>
+					<option>Other</option>
+				</select><br><br>
+				<label>Mobile Number:</label><br>
+				<input type="text" id="register_form_mobile" placeholder="enter your mobile number" required="required"><br><br>
+				<label>Mother tongue:</label><br>
+				<input type="text" placeholder="mother tongue"><br><br>
+				<label>Do you have Passport:</label>
+				Yes<input type="radio" name="passport_holder" id="passport_yes">
+				No<input type="radio" name="passport_holder" id="passport_no"><br>
+				<span id="passport_id">
+				<label>Enter Passport Number:</label><input type="text" required="required"></span><br>
+				<label>Join as</label>
+				<select required="required"  class="option_selector">
+					<option selected="selected">select your choice</option>
+					<option>Student</option>
+					<option>Student and Volunteer</option>
+					<option>Trainer</option>
+					<option>Trainer and volunteer</option>
+					<option>Volunteer</option>
+				</select><br><br>
+				<label><b>Select Your Continent:</b></label>
+				<select class="option_selector">
+					<option>Africa</option>
+					<option>Antarctica</option>
+					<option selected="selected">Asia</option>
+					<option>Australia</option>
+					<option>Europe</option>
+					<option>North America</option>
+					<option>South America</option>
+				</select><br><br>
+				<button type="reset" style="width: 120px;height: 30px;border-radius: 15px;">Reset</button>
+				<button type="submit" onclick="register_form_validation()" style="margin-left: 20%;width: 120px;height: 30px;border-radius: 15px;">Submit</button><br><br>
+				<div align="center" style="background-color: black;width: 300px; border-radius: 20px;">
+				<a href="loginpage.html" style="text-decoration:none;font-size:30px;color: white;">Proceed to Log In...</a>
+			</div>
+			</form>
+			
+		</div>
+		<div class="footer" id="student_footer">
+			<hr>
+			<div class="footer_exp" id="footer_feedback">
+				<h2><font color="white">Your feedback is important for us.</font></h2>
+				<form action="mailto:demo@gmail.com"  style="color: white;font-size: 20px;">
+					Name:<br>
+					<input type="text" id="feedback_user"><br>
+					Message:<br>
+					<textarea rows="4" cols="20">
+					</textarea><br>
+					<button onclick="feedback_validation()">submit</button>
+				</form>
+			</div>
+			<div id="footer_menu" class="footer_exp">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<div id="follow_platform" class="footer_exp">
+				<ul>
+					<li style="color: white;"><h2>You can follow us</h2></li>
+					<li id="facebook_logo"><a href="https://www.facebook.com/">facebook</a></li>
+					<li id="instagram_logo"><a href="https://www.instagram.com/">instagram</a></li>
+					<li id="pinterest_logo"><a href="https://www.pinterest.com/">pinterest</a></li>
+					<li id="youtube_logo"><a href="https://www.youtube.com/">Youtube</a></li>
+				</ul>
+			</div>
+			<div id="newsletter" class="footer_exp">
+				<p>After the complition of every tour we provide special documentries and newsletters to our subscribers. So if you want, please subscribe to our newsletters  </p>
+				<input type="text" id="newsletter_email" placeholder="enter your email">
+				<button onclick="newsletter_user()">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

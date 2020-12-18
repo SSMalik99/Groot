@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotosGalaxy</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resources\css\index.css">
+	<script type="text/javascript" src="resources\javascript\index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		});
+	</script>
+	<style type="text/css">
+		#hire_header{
+			background-color: #1A534B;
+			border-radius: 5px;
+		}
+
+		#hire_footer{
+			background-color: black;
+			border-radius: 20px;
+		}
+		input[type="text"]{
+			height: 25px;
+			width: 250px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="header" id="hire_header">
+			<div id="logo"><a href="index.html" target="self">Photos'<font color="white">Galaxy</font></a></div>
+			<div id="menubar">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul></div>
+			<div id="access"><a href="loginpage.html">Login/Sign Up</a></div>
+		</div><hr>
+		<div id="hiring_content">
+			<div style="font-size: 25px;">
+				<p>
+					You can hire our students for the photoshop or for the video 	shoot, to capture your pleasing movement for your loving once.<br>
+					some conditions or requirements for a proper environment.<br><br>
+					1.Working stay more than three days, then hirer must have to take care of all the need of the hired person.<br>
+					2.Visiting other countries with the hired student then hirer have to spend whole the money and safely leave him back to the home after hiriing limit.<br>
+					3.Student will only do the photography nothing else.<br>
+					Whole the term and condition will be shared during the time of hiring.<br>
+					Now you can add your purpose and detail inside the hiring form.
+				</p>
+			</div>
+			<div align="center" style="margin: 30px;">
+				
+				<form style="background-color:#1A534B;padding: 30px;color: white;height: auto;width: 400px;border-radius: 10px; font-size: 20px;">
+					<h2>Hiring Form</h2>
+					<label>Name:</label><br>
+					<input type="text" placeholder="enter your name" required="required"><br><br>
+					<label>Valid Id Name:</label><br>
+					<input type="text" required="required"><br><br>
+					<label>Valid Id Number:</label><br>
+					<input type="text" placeholder="enter Id Number" required="required"><br><br>
+					<label>Mobile Number:</label><br>
+					<input type="text" required="required" placeholder="enter your mobile number"><br><br>
+					<label>Enter Email Id:</label><br>
+					<input type="text" placeholder="please enter your email Id" required="required"><br><br>
+					<label>Starting date</label>
+					<input type="date" required="required"><br><br>
+					<label>Ending date:</label>
+					<input type="date" required="required"><br><br>
+					<label>Address:</label><br>
+					<textarea cols="30" rows="6" required="required"></textarea><br>
+					<label>Select your purpose:</label><br>
+					<select style="height: 25px;width: 250px;" required="required">
+						<option value="special occassions">special occassions</option>
+						<option value="Trip">Trip</option>
+						<option value="vacations">For vacations</option>
+						<option value="Documentry">Documentry</option>
+						<option value="Video Shoot">Video Shoot</option>
+						<option value="Reporting Field" selected="selected">Reporting Field</option>
+					</select><br><br>
+					<button type="submit" style="width: 250px;height: 35px;border-radius: 20px;background-color: black;color: white;">Submit</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer" id="hire_footer">
+			<hr>
+			<div class="footer_exp" id="footer_feedback">
+				<h2><font color="white">Your feedback is important for us.</font></h2>
+				<form action="mailto:demo@gmail.com"  style="color: white;font-size: 20px;">
+					Name:<br>
+					<input type="text" id="feedback_user"><br>
+					Message:<br>
+					<textarea rows="4" cols="20">
+					</textarea><br>
+					<button onclick="feedback_validation()">submit</button>
+				</form>
+			</div>
+			<div id="footer_menu" class="footer_exp">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<div id="follow_platform" class="footer_exp">
+				<ul>
+					<li style="color: white;"><h2>You can follow us</h2></li>
+					<li id="facebook_logo"><a href="https://www.facebook.com/">facebook</a></li>
+					<li id="instagram_logo"><a href="https://www.instagram.com/">instagram</a></li>
+					<li id="pinterest_logo"><a href="https://www.pinterest.com/">pinterest</a></li>
+					<li id="youtube_logo"><a href="https://www.youtube.com/">Youtube</a></li>
+				</ul>
+			</div>
+			<div id="newsletter" class="footer_exp">
+				<p>After the complition of every tour we provide special documentries and newsletters to our subscribers. So if you want, please subscribe to our newsletters  </p>
+				<input type="text" id="newsletter_email" placeholder="enter your email">
+				<button onclick="newsletter_user()">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

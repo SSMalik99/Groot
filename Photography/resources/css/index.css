@@ -1,0 +1,432 @@
+#name_taker{
+	width:auto;
+	height: 220px;
+	background-size: auto;
+	background-image:url("../images/wildlife/im35.jpg");
+	text-align: center;
+	line-height: 200px;
+	border-radius: 30px;
+}/*this will design the code of name taker div*/
+#name_taker_container{
+	width: 400px;
+	height: 40px;
+	background: transparent;
+	border-color: white;
+	font-size: 20px;
+}
+#name_taker_submit{
+	height: 45px;
+	width: 170px;
+	background: transparent;
+	font-size: 25px;
+	border-color: white;
+}
+/*this is the end of name tker div*/
+
+
+#wholecontent{/*will specify what would be the size of body tag and modify it appearance*/
+	height: 1420px;
+	width: auto;
+	border-radius: 20px;
+	background-image:url("../images/wildlife/im35.jpg");
+	
+}
+
+
+.header{/*will modify header part*/
+	margin-top: 0px;
+	height: 70px;
+	width: auto;
+	position: relative;
+}
+.header div{display: inline-flex;}
+
+
+#logo{/*responsible for logo*/
+	width:auto;
+	height: 70px;
+	width: 240px;
+}
+#logo a{
+	text-decoration: none;
+	font-size: 40px;
+	color: white;
+	font-style:oblique;
+	text-shadow: 2px 2px 4px;
+	/*line-height: 130px;*/
+	margin-left: 10px;
+	margin-top: 3px;
+}
+
+
+#menubar{/*resposible for main menu on header*/
+	height:60px;
+	margin-left: 200px;
+	line-height: 30px;
+	text-align: center;
+}
+#menubar ul{
+	margin: 0px;
+	padding: 0px;
+}
+#menubar ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 7px;
+}
+#menubar ul li a{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px 4px;
+}
+#menubar ul li a:hover{
+	font-size: 25px;
+	text-decoration: none;
+}
+
+
+#access{/*provide the design of login/sign up decoration */
+	float: right;
+	margin-left: 450px;
+	margin-top: 0px;
+}
+#access a{
+	text-decoration:none;
+	color: white;
+	font-size: 20px;
+	margin-top: 3px;
+	text-shadow: 2px 2px 4px;
+}
+#access a:hover{
+	text-decoration:none;
+	color: white;
+	font-size: 22px;
+}
+
+
+#maincontent{/*will specify the content of the home page*/
+	height: auto;
+	width:auto;
+	background-size:auto;
+	position: relative;
+}
+
+#main1{
+	margin-left: 230px;
+	margin-right: 230px;
+	height: 400px;
+	width: 1080px;
+	color: white;
+	word-wrap: break-word;
+}
+#main1 a{
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px;
+	transition: width 4s;
+}
+
+#main2{
+	margin-left: 130px;
+	margin-right: 130px;
+	height: auto;
+	width: auto;
+	color: white;
+}
+#main2 p{font-size: 25px;}
+#main2 a{text-decoration: none;}
+
+#main3{
+	float: left;
+	height: 398px;
+	width: 400px;
+	float: left;
+	margin-left: 130px;
+	position: relative;
+	transition: width 2s;
+	color: #0AF77F;
+}
+#main3:hover{
+	height: 400px;
+	width: 500px;
+}
+#main3 a{
+	text-decoration:none;
+	font-size: 20px;
+	color: white;
+}
+#main3 a:hover{
+	text-decoration:none;
+	font-size: 30px;
+	color: white;
+	text-shadow: 1px 1px 4px;
+}
+
+#main4{
+
+	height: 398px;
+	width: 435px;
+	float: left;
+	position: relative;
+	word-wrap: break-word;		
+}
+#main4 a{
+	font-size: 20px;
+	text-decoration: underline;
+	color: white;
+}
+
+#main5{
+	color: white;
+	height: 398px;
+	width: 400px;
+	float: left;
+	position: relative;
+	transition: width 3s;
+}
+#main5:hover{
+	height: 400px;
+	width: 500px;
+}
+#main5 p{font-size: 20px;}
+#main5 b{
+	text-decoration: underline;
+	font-size: 30px;
+}
+#main5 span a{
+	text-decoration: underline;
+	color:#0AF77F 
+}/*ending of main content appeared on home page*/
+
+
+.footer{/*specify the footer content*/
+	height: auto;
+	width: 100%;
+	float: left;	
+}
+.footer_exp{
+	width: 300px;
+	height: 280px;
+	word-wrap: break-word;
+	float: left;
+	margin-left: 30px;
+	transition-duration: 2s;
+}
+.footer_exp:hover{width: 320px;}
+.footer_exp ul{list-style: none;}
+
+#footer_menu ul li a{
+	text-decoration: none;
+	font-size: 35px;
+	color: white;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+#footer_menu ul li a:hover{font-size: 40px;}
+
+#follow_platform ul li a{
+	text-decoration: none;
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+#facebook_logo{
+	background-color: blue;
+	width: 115px;
+	border-radius: 10px;
+	padding: 2px;
+	margin: 2px;
+}
+#instagram_logo{
+	width: 120px;
+	font-size: 25px;
+	border-radius: 10px;
+	padding: 2px;
+	margin: 2px;
+	background-image: linear-gradient(to bottom right,#8a3ab9,#e95950, #bc2a8d, #fccc63,#fbad50,#cd486b,#4c68d7	);
+}
+#pinterest_logo{
+	width: 110px;
+	border-radius: 10px;
+	background-color: #E60023;
+	padding: 2px;
+	margin: 4px;
+}
+#youtube_logo{
+	width: 110px;
+	border-radius: 30px;
+	background-color: #FF0000;
+	padding: 2px;
+	margin: 2px;
+}
+#newsletter p{
+	font-size: 25px;
+	color: white;
+}
+
+
+.alien_maincontent{/*will deecorate the content of page except home page */
+	height: 1030px;
+	width: auto;
+	background-color: transparent;
+}
+
+.alien_menu ul{/*design the menu of pages other than home page*/
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.alien_menu ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px;
+}
+.alien_menu ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+.alien_menu ul li a:hover{
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+}
+
+
+#categories_content{/*especially  for content of "categories" page*/
+	margin-left: 250px;
+	margin-right: 250px;
+}
+#categories_menu{
+	width: 400px;
+	margin: auto;
+}
+#categories_intro{
+	align-content: left;
+	word-wrap: break-word;
+	margin: auto;
+	height: 120px;
+	width: 720px;
+}
+#categories_intro p{
+	font-size: 25px;
+	color: white;
+}
+
+.categories_part{
+	height: 400px;
+	width: 400px;
+	float: left;
+	margin-left: 20px;
+	transition-duration: 2s;
+}
+.categories_part:hover{
+	height: 450px;
+	width: 450px;	
+}
+.categories_part img {
+  width: 100%;
+  height: 80%;
+}
+.description{
+  	color: white;
+  	font-size: 20px;
+  	text-align: center;
+  	word-wrap: break-word;
+}/*categories page decoration is from 297 to this line*/
+
+
+#star_content{/*for the celebrities page*/
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#star_menu{
+	width: 400px;
+	margin: auto;
+
+}
+.star_photos{
+	height: 210px;
+	width: 400px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	position:static;
+	transition-duration: 2s;
+}
+.star_photos:hover{height: 310px;}
+.star_photos div{float: left;}
+
+.image_shower img{/*can be used for any image*/
+	height: 210px;
+	width: 200px;
+	transition-duration: 2s;
+}
+.image_shower img:hover{
+	height: 310px;
+	width: 400px;
+}
+.image_detail{
+	height: 210px;
+	width: 200px;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	word-wrap: break-word;
+}/*celebrities page modification is ended here*/
+
+
+#wild_content{/*for the wilflife page started*/
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#wild_menu{
+	width: 400px;
+	margin: auto;
+}
+
+.wild_photos{
+	height: 210px;
+	width: 400px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	position:static;
+	transition-duration: 2s;
+}
+.wild_photos:hover{height: 310px;}
+.wild_photos div{float: left;}/*wildlife page decoration til this line*/
+
+
+#street_content{/*for the street life page*/
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#street_menu{
+	width: 400px;
+	margin: auto;
+}
+.street_photos{
+	height: 210px;
+	width: 400px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	position:static;
+	transition-duration: 2s;
+}
+.street_photos:hover{height: 310px;}
+.street_photos div{float: left;}
+
+
+#nature_content{/*for the nature page*/
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#nature_menu{
+	width: 400px;
+	margin: auto;
+}

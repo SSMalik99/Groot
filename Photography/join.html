@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotosGalaxy</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resources\css\index.css">
+	<script type="text/javascript" src="resources\javascript\index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#student_signup").click(function(){
+
+			});
+		});
+	</script>
+	<style type="text/css">
+		#joining_content{
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		#join_header{
+			background-color: #1A534B;
+			border-radius: 5px;
+		}
+		#join_footer{
+			background-color:black; 
+			border-radius: 20px;
+		}
+		#student_joining{
+			float: left;
+			width: 600px;
+			border-right:2px solid black;
+			margin-bottom: 50px;
+			padding-right: 40px;
+			font-size:20px;
+		}
+		#trainer_joining{
+			float: left;
+			width: auto;
+			width: 600px;
+			word-wrap: break-word;
+			font-size: 20px;
+			margin-bottom: 50px;
+			margin-left: 50px; 
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<div class="header" id="join_header">
+			<div id="logo"><a href="index.html" target="self">Photos'<font color="white">Galaxy</font></a></div>
+			<div id="menubar">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul></div>
+			<div id="access"><a href="loginpage.html">Login/Sign Up</a></div>
+		</div><hr>
+		<div id="joining_content">
+			<h1 align="center">you can join us in two ways.</h1>
+			<div id="student_joining">
+				<h1 align="center">As a Student</h1>
+				<h3 align="left">Requirements:-</h3>
+				<span>
+					For a student there is no specific knowledge is required.<br>
+					only thing is required that candidate must be able to express their thoughts,in any way or any language.<br>
+					Other thing is that students must have willing to overcome every obstacle during their internships(Into the classroom and into the Turf.
+				</span>
+				<h3>Benefit:-</h3>
+				<span>
+					You will get the key towards the life value, because Photography is not just a way to earn it,s more than it.
+				</span>
+				<h3>What and How to learn:-</h3>
+				<span>
+					Everything will be practical so students' classroom will be the national parks, sancturies or the place with specific habbitat.<br>
+					Basic knowlege on photography we will cover in first five-six days, after that everything will depend on God(means how our mind will work).<br>
+					Everyone will get all the accessaries from us,but condition that they must have to use with proper safety, and deposite back to the office after complition of their three Tour across the world.
+				</span>
+				<h3>Selection Process:-</h3>
+				<span>
+					No recommendation will work, apply for the course online then you will get notice after one or two weeks which will provide you, starting date of your course your practical tours and definitely user name and password to log in.<br>You just have to cofirm your seat through Login Portal.
+				</span><br>
+			</div>
+			<div id="trainer_joining">
+				<h1 align="center">As a Trainer</h1>
+				<h3>Requirement:-</h3>
+				<span>
+					Age must be greater than 20, No experience required but there is special test at  our campus that must have to clear(just on the basic of Photography and their interest and willingness).<br>
+					Everyone in the faculty must be able to work at any time and some basic knowledge of medical science(just basic to face the situation in the emergency).
+				</span>
+				<h3>What and How to do:-</h3>
+				<span>
+					Mostly work of the teachers is to taking care of our students as a volunteer.
+					So just things with the way you want, but consider all the students as one.
+					In the time of natural disaster we will work for human. so please make your choice wisely.
+				</span>
+				<h3>Benefits:-</h3>
+				<span>
+					Volunteering life is your choice, so you will get the chance to fullfill your wishes ,proper sallary, whole family living arrangement.More than this you can discuss during the time of interview.
+				</span>
+				<h3>selection procedure:-</h3>
+				<span>
+					1) Online application.<br>
+					2) On campus small test.<br>
+					3) Interview.<br>
+					4) Small interaction with students.<br>
+					5) Patience.<br>
+				</span><br>
+			</div>
+			<div align="center" style="margin-bottom: 20px;">
+				<a href="register.html" style="text-decoration:blink;font-size: 35px;background-color: #1A534B;color: white;">
+					Register Yourself with us
+				</a>
+			</div>
+		</div>
+		<div class="footer" id="join_footer">
+			<hr>
+			<div class="footer_exp" id="footer_feedback">
+				<h2><font color="white">Your feedback is important for us.</font></h2>
+				<form action="mailto:demo@gmail.com"  style="color: white;font-size: 20px;">
+					Name:<br>
+					<input type="text" id="feedback_user"><br>
+					Message:<br>
+					<textarea rows="4" cols="20">
+					</textarea><br>
+					<button onclick="feedback_validation()">submit</button>
+				</form>
+			</div>
+			<div id="footer_menu" class="footer_exp">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<div id="follow_platform" class="footer_exp">
+				<ul>
+					<li style="color: white;"><h2>You can follow us</h2></li>
+					<li id="facebook_logo"><a href="https://www.facebook.com/">facebook</a></li>
+					<li id="instagram_logo"><a href="https://www.instagram.com/">instagram</a></li>
+					<li id="pinterest_logo"><a href="https://www.pinterest.com/">pinterest</a></li>
+					<li id="youtube_logo"><a href="https://www.youtube.com/">Youtube</a></li>
+				</ul>
+			</div>
+			<div id="newsletter" class="footer_exp">
+				<p>After the complition of every tour we provide special documentries and newsletters to our subscribers. So if you want, please subscribe to our newsletters  </p>
+				<input type="text" id="newsletter_email" placeholder="enter your email">
+				<button onclick="newsletter_user()">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

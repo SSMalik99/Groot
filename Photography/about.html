@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotosGalaxy</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resources\css\index.css">
+	<script type="text/javascript" src="../photography/resources/javascript/index.js"></script>
+	<style type="text/css">
+		#about_header{
+			background-color: #34495E;
+			border-radius: 5px;
+		}
+		#about_footer{
+			background-color: #044227;
+			border-radius: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="header" id="about_header">
+			<div id="logo"><a href="index.html" target="self">Photos'<font color="white">Galaxy</font></a></div>
+			<div id="menubar">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul></div>
+			<div id="access"><a href="loginpage.html">Login/Sign Up</a></div>
+		</div><hr>
+		<div>
+			<div style="font-size: 25px;"><h1>What we do:-</h1>
+				<p>
+					Firstly, we provide a training in the field of photography mainly in the field of wildlife photography, without any course fees or any other instruements charge.This provide us only those student who just living to learn and some trainers , who are just living to share their experince with someone who is keen to listen.<br>
+					After this, during the time of emergency we start working as volunteer groop, but at that stage we chage our name from Photos'Galaxy to SaveGalaxy, cause we first think about those pesons who are currently  living a life in miserable conditions.<br>
+					There is no doubt about fun cause we also do fun but just with the wild animals, forests , mountains , rivers and offcourse the winds and dirt.we only do this,either the time is hard or like a butter.
+				</p>
+			</div>
+			<div style="font-size: 25px;">
+				<h1>Why we do:-</h1>
+				<p>Initially, we don't have any purpose , to answer this question, but somehow wr realize that the answer of this question is described inside the answer of quetions "What we do?"
+				so we request you to read the first paragraph again and you will get your answer.</p>
+			</div>
+			<div style="font-size: 25px ;margin-bottom: 20px;";>
+				<h1>What we want:-</h1>
+				Not to be serious, as an organistion we just need fund and donations(but can arrange it).
+				what we need is quite simple , just to work for the betterness. Cause old wy never opens new doors.
+			</div>
+		</div>
+		<div class="footer" id="about_footer">
+			<hr>
+			<div class="footer_exp" id="footer_feedback">
+				<h2><font color="white">Your feedback is important for us.</font></h2>
+				<form action="mailto:demo@gmail.com"  style="color: white;font-size: 20px;">
+					Name:<br>
+					<input type="text" id="feedback_user"><br>
+					Message:<br>
+					<textarea rows="4" cols="20">
+					</textarea><br>
+					<button onclick="feedback_validation()">submit</button>
+				</form>
+			</div>
+			<div id="footer_menu" class="footer_exp">
+				<ul>
+					<li><a href="index.html" target="self">Home</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="join.html">join Us</a></li>
+					<li><a href="hiring.html">Hire Us</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<div id="follow_platform" class="footer_exp">
+				<ul>
+					<li style="color: white;"><h2>You can follow us</h2></li>
+					<li id="facebook_logo"><a href="https://www.facebook.com/">facebook</a></li>
+					<li id="instagram_logo"><a href="https://www.instagram.com/">instagram</a></li>
+					<li id="pinterest_logo"><a href="https://www.pinterest.com/">pinterest</a></li>
+					<li id="youtube_logo"><a href="https://www.youtube.com/">Youtube</a></li>
+				</ul>
+			</div>
+			<div id="newsletter" class="footer_exp">
+				<p>After the complition of every tour we provide special documentries and newsletters to our subscribers. So if you want, please subscribe to our newsletters  </p>
+				<input type="text" placeholder="enter your email" id="newsletter_email">
+				<button onclick="newsletter_user()">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
