@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+</head>
+<body>
+	<div class="container">
+		<table class="table tabl-striped table-bordered table-hover">
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>Human</td>
+				<td>Animal</td>
+				<td>Bird</td>
+			</tr>
+			<tr>
+				<td>75</td>
+				<td>55</td>
+				<td>99</td>
+			</tr>
+		</table>
+		<form style="width: 300px" role="form">
+			<div class="form-group">
+				<label>Email address</label>
+				<input type="text" name="" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Password</label>
+				<input type="password" class="form-control" placeholder="password">
+			</div>
+			<button type="submit" class="btn btn-danger">Login</button>
+		</form>
+		<form class="form-inline" role="form">
+			<div class="form-group">
+				<label>Email address</label>
+				<input type="text"class="form-control">
+			</div>
+			<div class="form-group">
+				<label class="sr-only">File input</label>
+				<input type="file">
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" name="">check me out</label>
+			</div>
+			<button type="submit" class="btn btn-success">Login</button>
+		</form>
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Email address</label>
+				<div class="col-sm-10">
+				<input type="text"class="form-control"></div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">last name</label>
+				<div class="col-sm-10">
+				<input type="text" class="form-control"></div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+				<div class="checkbox">
+				<label><input type="checkbox" name="">remember me</label></div></div>
+			</div>
+			<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+			<button type="submit" class="btn btn-primary">Login</button></div></div>
+		</form>
+	</div>
+</body>
+</html>
+<!--in bootstrap 
+form  has three type
+	1)verticle form
+	2)horizontal form
+	3)inline form
+rule to make a form mandatory for responsive form
+1)role="form"
+2)class="form-group" for div
+3)class="form-control" for input
