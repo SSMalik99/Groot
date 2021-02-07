@@ -1,0 +1,36 @@
+<!--keydown() event when we press a key on the key board the keydown() event is occured and once it occured then the function associated with the keydown() method will be execute
+keypress() ebent is occured when a key is pressed from the key boared
+delegate() used for one or more handler for spaecified elements which are the children of selected element. this method is executes a function to run when the event occurs. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		i=0;
+		$(document).ready(function(){
+			$("input").keydown(function(){
+				$("input").css("background-color","tomato");
+			});
+			$("input").keyup(function(){
+				$("input").css("background-color","white");
+			});
+			$("input").keypress(function(){
+				$("span").text(i+=1);
+			});
+			$("#p1").mouseenter(function(){
+				$("#div1").text("mouse is moving").show().fadeOut(1000);
+			});
+			$("#p1").mouseleave(function(){
+				$("#div2").text("mouse is removed").show().fadeOut(1000);
+			});
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+	<p id="p1">write<input type="text"></p>
+	<p>key pressed:<span>0</span></p>
+	<div id="div1"></div>
+	<div id="div2"></div>
+</body>
+</html>

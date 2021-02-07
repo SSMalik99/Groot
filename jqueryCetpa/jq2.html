@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ss").click(function(){
+				$("div1").fadeToggle();
+				$("div2").fadeToggle("slow");
+				$("div3").fadeToggle(6000);
+			});
+			$("#tt").click(function(){
+				$("div1").fadeToggle();
+				$("div2").fadeToggle("slow");
+				$("div3").fadeToggle(6000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="ss">click me</button>
+	<div id="div1" style="background-color:red;width:80px;height:80px;"></div>
+	<div id="div2" style="background-color:green;width:80px;height:80px;"></div>
+	<div id="div3" style="background-color:blue;width:80px;height:80px;"></div>
+	<button id="tt">click me</button>
+
+</body>
+</html>
+<!--fadeIn()
+	fadeOut()
+fadeTo() used to blue to a given opacity
+	2)slideDown() this is used to slide down an elment
+	slideUp()
+	slideToggle()

@@ -1,0 +1,40 @@
+<!--animation() method-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ss").click(function(){
+				$("div").animate({left:'450px'});
+			});
+			$("select").change(function(){
+				document.getElementById('loc').innerHTML="you selected:"+document.getElementById('se').value;
+			});
+			$("p").bind("click",function(){
+				alert("i'm clicked");//bind()
+			});
+			$(".jo").select(function(){
+				$('#bkwaas').text('some text is selected').show().fadeOut();
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="submit" value="click" id="ss">
+	<div style="background-color: green;height: 100px;width: 100px;position: absolute;"></div>
+	<select id="se">
+		<option>pink</option>
+		<option>red</option>
+		<option>green</option>
+		<option>yellow</option>
+		<option selected="selected">Black</option>
+	</select>
+	<div id="loc" style="color: red;"></div>
+	<p>click me</p>
+	<input type="text" value="its me" class="jo">
+	<input type="text" value="its me" class="jo">
+	<div id="bkwaas"></div>
+</body>
+</html>
