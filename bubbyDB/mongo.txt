@@ -1,0 +1,22 @@
+it is an open souree document database that provide high scalability
+and automatic scaling
+
+it is an document oriented database suppoerted by acompany
+name tengen
+
+featchers:-
+1:-Scalability
+2:-performance
+3:- High availability
+4:-Scaling from single server deployments to large and complex
+multi-sites architeecture.
+
+
+NOSQL database
+
+it can be divided in three
+RDBMS
+OLAP
+NoSQL;- it provide a mechanism for storage and retrival of data rather than table
+used in 
+generally store big data and real time web applications.

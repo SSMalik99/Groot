@@ -233,3 +233,233 @@ const funv1 =(par1:number,par2:string)=>{}
 
 */
 
+/* 
+Interface:- interface is just like a blue print of something like object or may be class so that we can
+use same to make many objects of same type look at the example:-
+Syntax:-interface inteface_name{}
+
+interfaces have zero runtime javascript impact:-
+cause ther is no javaScript is  emitted when we declare an interface.
+*/
+/*
+interface IPerson { 
+    firstName:string, 
+    lastName:string, 
+    sayHi: ()=>string 
+ } 
+ 
+ var customer:IPerson = { 
+    firstName:"Tom",
+    lastName:"Hanks", 
+    sayHi: ():string =>{return "Hi there"} 
+ } 
+ 
+ console.log("Customer Object ") 
+ console.log(customer.firstName) 
+ console.log(customer.lastName) 
+ console.log(customer.sayHi())  
+ 
+ var employee:IPerson = { 
+    firstName:"Jim",
+    lastName:"Blakes", 
+    sayHi: ():string =>{return "Hello!!!"} 
+ } 
+   
+ console.log("Employee  Object ") 
+ console.log(employee.firstName);
+ console.log(employee.lastName);
+ */
+
+ //union type of interface
+
+//  interface RunOptions { 
+//     program:string; 
+//     commandline:string[]|string|(()=>string); 
+//  } 
+ 
+//  //commandline as string 
+//  var options:RunOptions = {program:"test1",commandline:"Hello"}; 
+//  console.log(options.commandline)  
+ 
+//  //commandline as a string array 
+//  options = {program:"test1",commandline:["Hello","World"]}; 
+//  console.log(options.commandline[0]); 
+//  console.log(options.commandline[1]);  
+ 
+//  //commandline as a function expression 
+//  options = {program:"test1",commandline:()=>{return "**Hello World**";}}; 
+ 
+//  var fn:any = options.commandline; 
+//  console.log(fn());
+
+
+// //interface and arrays
+
+// interface namelist { 
+//     [index:number]:string 
+//  } 
+ 
+// //  var list2:namelist = ["John",1,"Bran"] //Error. 1 is not type string  
+// var list2:namelist = ["John","Wayne","Bran"] //Error. 1 is not type string  
+//  interface ages { 
+//     [index:string]:number 
+//  } 
+ 
+//  var agelist:ages; 
+//  agelist["John"] = 15   // Ok 
+// //  agelist[2] = "nine"   // Error
+//  agelist[2] = 9
+//  TypeError: Cannot set property 'John' of undefined
+//     at Object.<anonymous> (C:\Users\Kamaljeet Kaur\Desktop\bubby's fullstack\angular\edureka angular\Groot\typeScript\tutorialPointTypescript\first.js:5:17)
+
+    
+
+// // interface allow us inheritence
+
+// Syntax: Single Interface Inheritance
+
+// Child_interface_name extends super_interface_name
+
+
+// Syntax: Multiple Interface Inheritance
+
+// Child_interface_name extends super_interface1_name, super_interface2_name,…,super_interfaceN_name
+
+
+
+/*CLASS in TypeScript:-
+Syntax:-
+class class_name { 
+    //class scope 
+ }
+
+ A class definition can include the following −
+
+Fields − A field is any variable declared in a class. Fields represent data pertaining to objects,
+not need to use let,var or const for class fields;
+
+Constructors − Responsible for allocating memory for the objects of the class
+
+Methods −  represent actions an object can take.
+
+
+class Car { 
+   //field 
+   engine:string; 
+ 
+   //constructor 
+   constructor(engine:string) { 
+      this.engine = engine 
+   }  
+
+   //function 
+   disp():void {//void when method is nor returning anythin; 
+      console.log("Engine is  :   "+this.engine) 
+   } 
+}
+
+
+
+creating instance/object of a class
+
+syntax:-
+var object_name = new class_name(arguments)//argument for constructor if it is parameterised;
+
+
+accessing class field
+obj_name.field_name;
+
+to access method
+obj_name.method.name;
+
+
+inheritance of classes
+
+single and multilevel is allowded but multiple is not allowded;
+
+class classA{}
+
+//single level
+class classB extends classA{
+    super.constructor()//you can also override method of parent after calling method by super.method_name;
+}
+
+//multilevel
+class classC extends classB{}
+in this classC extends ClassB and classB extends ClassA that is called multi level inheritance;
+
+
+static method or field can also be created in the class using static keyword
+
+syntax:-
+static method_name/field_name:{//body}
+
+
+data can be hide in the class using access specifier public,private or protected
+
+
+Classes and Interfaces
+Classes can also implement interfaces.
+
+interface ILoan { 
+   interest:number 
+} 
+
+class AgriLoan implements ILoan { 
+   interest:number 
+   rebate:number 
+   
+   constructor(interest:number,rebate:number) { 
+      this.interest = interest 
+      this.rebate = rebate 
+   } 
+} 
+
+var obj = new AgriLoan(10,1) 
+console.log("Interest is : "+obj.interest+" Rebate is : "+obj.rebate )
+
+
+
+
+An object is an instance which contains set of key value pairs. The values can be scalar values or functions or even array of other objects. The syntax is given below −
+
+Syntax
+var object_name = { 
+   key1: “value1”, //scalar value 
+   key2: “value”,  
+   key3: function() {
+      //functions 
+   }, 
+   key4:[“content1”, “content2”] //collection  
+};
+
+
+Duck-typing:-means when two objects follow the same properties;
+
+The TypeScript compiler implements the duck-typing system that allows object creation on the fly while keeping type safety.
+
+Example
+
+interface IPoint { 
+   x:number 
+   y:number 
+} 
+function addPoints(p1:IPoint,p2:IPoint):IPoint { 
+   var x = p1.x + p2.x 
+   var y = p1.y + p2.y 
+   return {x:x,y:y} 
+} 
+
+//Valid 
+var newPoint = addPoints({x:3,y:4},{x:5,y:1})  
+
+//Error 
+var newPoint2 = addPoints({x:1},{x:4,y:3})
+
+
+
+
+
+
+*/
+
