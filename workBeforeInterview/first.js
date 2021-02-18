@@ -47,5 +47,25 @@
 
 
 
+//node js file system(fs) module
+
+//read File
+
+// const http = require('http');
+// const fs = require('fs');
+
+// http.createServer((req,res)=>{
+//     fs.readFile("./first.html",(err,data)=>{
+//         res.writeHead(200,{"Content-Type":'text/html'})
+//         res.write(data);
+//         res.end();
+//     });
+// }).listen(8081)
 
 
+
+//writeFile
+
+const fs = require('fs');
+
+fs
